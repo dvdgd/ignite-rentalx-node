@@ -13,7 +13,9 @@ function errorHandler(
     return res.status(err.statusCode).json({ error: err.message });
   }
 
-  return res.status(500).send("Something went wrong try again later");
+  return res
+    .status(500)
+    .json({ error: `Something went wrong try again later - ${err.message}` });
 }
 
 export { errorHandler };
