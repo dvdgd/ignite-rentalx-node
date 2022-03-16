@@ -35,6 +35,11 @@ async function ensureAuthenticated(
       throw new NotFoundError("User not found");
     }
 
+    req.user = {
+      id: user_id,
+    };
+
+    console.log(req.user);
     next();
   } catch {
     throw new UnauthenticatedError(
