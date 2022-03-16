@@ -3,8 +3,8 @@ import "express-async-errors";
 import express from "express";
 import swaggerUi from "swagger-ui-express";
 
-import { errorHandler } from "./error/middlewares/errorHandler";
-import { routeNotFound } from "./error/middlewares/routeNotFound";
+import { errorHandler } from "./middlewares/errorHandler";
+import { routeNotFound } from "./middlewares/routeNotFound";
 import { router } from "./routes";
 import swaggerFile from "./swagger.json";
 import "./database";

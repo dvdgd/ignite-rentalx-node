@@ -1,6 +1,6 @@
 import { inject, injectable } from "tsyringe";
 
-import { ConflictError } from "../../../../error/ConflictError";
+import { ConflictError } from "../../../../errors/ConflictError";
 import { ICategoriesRepository } from "../../repositories/ICategoriesRepository";
 
 interface IRequest {
