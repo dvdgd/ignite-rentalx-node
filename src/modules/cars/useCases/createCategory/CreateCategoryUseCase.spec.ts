@@ -1,5 +1,5 @@
-import { ConflictError } from "@errors/ConflictError";
 import { CategoriesRepositoryInMemory } from "@modules/cars/repositories/in-memory/CategoriesRepositoryInMemory";
+import { ConflictError } from "@shared/errors/ConflictError";
 
 import { CreateCategoryUseCase } from "./CreateCategoryUseCase";
 

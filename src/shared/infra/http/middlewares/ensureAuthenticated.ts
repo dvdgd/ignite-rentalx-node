@@ -1,9 +1,9 @@
 import { NextFunction, Request, Response } from "express";
 import { verify as jwtVerify } from "jsonwebtoken";
 
-import { NotFoundError } from "@errors/NotFoundError";
-import { UnauthenticatedError } from "@errors/UnauthenticatedError";
-import { UsersRepository } from "@modules/accounts/repositories/implementations/UsersRepository";
+import { UsersRepository } from "@modules/accounts/infra/typeorm/repositories/UsersRepository";
+import { NotFoundError } from "@shared/errors/NotFoundError";
+import { UnauthenticatedError } from "@shared/errors/UnauthenticatedError";
 
 interface IPayload {
   sub: string;

@@ -1,7 +1,7 @@
 import { inject, injectable } from "tsyringe";
 
-import { ConflictError } from "@errors/ConflictError";
 import { ICategoriesRepository } from "@modules/cars/repositories/ICategoriesRepository";
+import { ConflictError } from "@shared/errors/ConflictError";
 
 interface IRequest {
   name: string;

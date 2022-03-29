@@ -1,6 +1,6 @@
 import { Request, Response, NextFunction } from "express";
 
-import { CustomAPIError } from "@errors/CustomAPIError";
+import { CustomAPIError } from "@shared/errors/CustomAPIError";
 
 function errorHandler(
   err: Error,
